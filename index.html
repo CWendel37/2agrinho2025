@@ -1,24 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campo para Cidade</title>
+    <title>Do Campo para a Cidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container field-theme" id="sceneContainer">
+    <header>
         <h1>Do Campo para a Cidade</h1>
-        <button id="toggleButton">Transformar!</button>
-        <div class="elements-wrapper">
-            <div class="element tree"></div>
-            <div class="element barn"></div>
-
-            <div class="element building"></div>
-            <div class="element streetlight"></div>
+        <p class="subtitle">A transição entre a vida rural e urbana</p>
+    </header>
+    
+    <div class="transition-container">
+        <div class="scene countryside" id="countryside">
+            <div class="sun"></div>
+            <div class="tree" style="left: 50px;">
+                <div class="tree-top"></div>
+                <div class="tree-trunk"></div>
+            </div>
+            <div class="tree" style="left: 300px;">
+                <div class="tree-top"></div>
+                <div class="tree-trunk"></div>
+            </div>
+            <div class="house">
+                <div class="roof"></div>
+                <div class="window"></div>
+                <div class="door"></div>
+            </div>
+        </div>
+        
+        <div class="scene city" id="city">
+            <div class="building" style="left: 100px; height: 250px;">
+                <div class="window-grid">
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                </div>
+            </div>
+            <div class="building" style="left: 200px; height: 300px;">
+                <div class="window-grid">
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                </div>
+            </div>
+            <div class="building" style="left: 300px; height: 180px;">
+                <div class="window-grid">
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                    <div class="window-building"></div>
+                </div>
+            </div>
         </div>
     </div>
-
+    
+    <div class="controls">
+        <button id="showCountryside">Mostrar Campo</button>
+        <button id="showCity">Mostrar Cidade</button>
+        <button id="showTransition">Transição</button>
+    </div>
+    
+    <div class="info-section">
+        <div class="info-card">
+            <h2>A Vida no Campo</h2>
+            <p>O campo oferece um contato direto com a natureza, ar puro e um ritmo de vida mais tranquilo. A agricultura e a pecuária são as principais atividades econômicas, mantendo tradições culturais importantes para nossa identidade.</p>
+        </div>
+        
+        <div class="info-card">
+            <h2>A Migração para a Cidade</h2>
+            <p>Muitas pessoas deixam o campo em busca de melhores oportunidades de trabalho, educação e acesso a serviços. Esse êxodo rural transformou as cidades, que cresceram rapidamente, mas também enfrentam desafios como superpopulação e poluição.</p>
+        </div>
+        
+        <div class="info-card">
+            <h2>Encontrando o Equilíbrio</h2>
+            <p>Nos dias atuais, busca-se um equilíbrio entre o desenvolvimento urbano e a preservação do meio rural. Práticas como agricultura urbana, parques e áreas verdes nas cidades ajudam a manter essa conexão com a natureza.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Do Campo para a Cidade - Todos os direitos reservados</p>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
